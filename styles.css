@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: cursive, sans-serif;
   scroll-behavior: smooth;
   background-color: #0f1c2e;
   color: #e6f0ff;
@@ -51,6 +51,7 @@ p {
   text-align: left;
   line-height: 23px;
   color: #c0d4e5;
+  font-family: cursive, sans-serif;
 }
 
 .image {
