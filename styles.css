@@ -51,7 +51,6 @@ p {
   text-align: left;
   line-height: 23px;
   color: #c0d4e5;
-  font-family: cursive, sans-serif;
 }
 
 .image {
@@ -78,7 +77,6 @@ small {
   border-radius: 30px;
   cursor: pointer;
   font-size: 0.9rem;
-  font-family: cursive, sans-serif;
   letter-spacing: 2.3px;
 }
 
@@ -150,7 +148,7 @@ input {
 
   .btn {
     font-size: 1rem;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 5.5rem;
     margin-bottom: 2rem; /* Add breathing space from dot nav */
   }
 
@@ -160,13 +158,13 @@ input {
     margin-top: 1rem;
   }
 
-    h1 {
-        font-size: 30px;
-        margin-bottom: 0.1rem;
-        margin-top: auto;
-    }
+  h1 {
+    font-size: 30px;
+    margin-bottom: 0.1rem;
+    margin-top: 0.5rem;
+  }
 
-    p {
-        font-size: 18px;
-    }
+  p {
+    font-size: 18px;
+  }
 }
