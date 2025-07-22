@@ -39,7 +39,7 @@
 
     <!-- Slide 3 -->
     <section class="slide" id="slide4">
-      <h1>Apply now</h1>
+      <h1>Apply as Individual Raider</h1>
       <p>No bots. No lurkers. Just pure firepower.</p>
       <ul class="checklist">
         <li>✔ At least 100 followers on X</li>
@@ -48,9 +48,42 @@
         <li>✔ Healthy profile (clear bio, pic, banner)</li>
       </ul>
       <form action="https://formsubmit.co/meninblack671@gmail.com" method="POST">
-        <input type="text" placeholder="Telegram Username" required />
-        <input type="text" placeholder="X (Twitter) Username" required />
-        <button type="submit" class="btn">Apply now</button>
+        <input type="text" placeholder="Telegram Username" name="telegram" required />
+        <input type="text" placeholder="X (Twitter) Username" name="twitter" required />
+
+        <!-- FormSubmit Hidden Inputs (optional but helpful) -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://stftrending.github.io/tg/success.html"> <!-- Change this if needed -->
+        <input type="hidden" name="_subject" value="New Raider Application">
+        <button type="submit" class="btn">Send</button>
+        <!-- 🔽 New Button to navigate to Slide 4 -->
+        <a href="#slide5" class="btn">Apply as a team ➡</a>
+
+      </form>
+    </section>
+    <!-- Slide 4 -->
+    <section class="slide" id="slide5">
+      <h1>Apply as a Team</h1>
+      <p>Register your shill team with us. provide a valid CEO telegram username, we will
+        reach out to you for verification and onboarding.</p>
+      </p>
+      <ul class="checklist">
+        <li>✔ At least 50 active raiders</li>
+        <li>✔ Active channel on TG and X</li>
+        <li>✔ Team age: 1+ months old</li>
+        </ul>
+      <form action="https://formsubmit.co/meninblack671@gmail.com" method="POST">
+        <input type="text" placeholder="Team CEO Telegram Username" name="telegram" required />
+        <input type="text" placeholder="Your team X (Twitter) link" name="twitter" required />
+
+        <!-- FormSubmit Hidden Inputs (optional but helpful) -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://stftrending.github.io/tg/success.html"> <!-- Change this if needed -->
+        <input type="hidden" name="_subject" value="New Shill Team Application">
+        <button type="submit" class="btn">Send</button>
+        <!-- 🔽 New Button to navigate to Slide 4 -->
+        <a href="#slide4" class="btn">⬅ Back</a>
+
       </form>
     </section>
   </div>
@@ -61,6 +94,7 @@
     <span class="dot" data-target="slide2"></span>
     <span class="dot" data-target="slide3"></span>
     <span class="dot" data-target="slide4"></span>
+    <span class="dot" data-target="slide5"></span>
   </div>
 
   <script>
