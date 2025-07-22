@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join STF WEB3 Shill Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="slider horizontal">
+    <!-- Slide 1 -->
+    <section class="slide scroll-next" id="slide1">
+      <h1>What is STF Web3 Shill Hub?</h1>
+      <p>The STF Web3 Shill hub is a decentralized space that governs and home all strictly selected squad of top-tier shill teams and raiders
+        who dominates Telegram and X (Twitter).</p>
+      <img src="we-are.png" alt="What we are" class="image"/>
+      <button class="btn">Continue</button>
+    </section>
+
+    <!-- Slide 1.2 -->
+    <section class="slide scroll-next" id="slide2">
+      <img src="guy-phone.png" alt="People with money" class="image"/>
+      <h1>How do we work?</h1>
+      <p>Wanna join our STF Web3 Shill Hub? Get registered, as a team or individual raider and our team would review your application. When a project or token community comes to hire exposure from our space
+        we generate a list of our top-tier verified shill teams to take charge.<br>
+    Every shill teams housed in our space are verified. </p>
+      <button class="btn">Continue</button>
+    </section>
+
+    <!-- Slide 2 -->
+    <section class="slide scroll-next" id="slide3">
+      <h1>What is the catch?</h1>
+      <p>Exclusive access to shilling trainings, modern hyping techniques and strategies, as a team or an individual raider, And also entitlement to Raids and weekly rewards.</p>
+      <img src="money-kids.png" alt="Guy with phone" class="image"/>
+      <button class="btn">Continue</button>
+    </section>
+
+    <!-- Slide 3 -->
+    <section class="slide" id="slide4">
+      <h1>Apply now</h1>
+      <p>No bots. No lurkers. Just pure firepower.</p>
+      <ul class="checklist">
+        <li>✔ At least 100 followers on X</li>
+        <li>✔ Twitter Blue (verified) badge</li>
+        <li>✔ Account age: 3+ months old</li>
+        <li>✔ Healthy profile (clear bio, pic, banner)</li>
+      </ul>
+      <form action="https://formsubmit.co/meninblack671@gmail.com" method="POST">
+        <input type="text" placeholder="Telegram Username" required />
+        <input type="text" placeholder="X (Twitter) Username" required />
+        <button type="submit" class="btn">Apply now</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Dot Navigation -->
+  <div class="dots">
+    <span class="dot active" data-target="slide1"></span>
+    <span class="dot" data-target="slide2"></span>
+    <span class="dot" data-target="slide3"></span>
+    <span class="dot" data-target="slide4"></span>
+  </div>
+
+  <script>
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+
+  // Dots auto-updater
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const targetId = entry.target.id;
+          dots.forEach(dot => {
+            dot.classList.toggle('active', dot.dataset.target === targetId);
+          });
+        }
+      });
+    },
+    { threshold: 0.6 }
+  );
+
+  slides.forEach(section => observer.observe(section));
+
+  // Scroll to next on button click
+  const nextButtons = document.querySelectorAll('.scroll-next');
+
+  nextButtons.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      const nextSlide = slides[index + 1];
+      if (nextSlide) {
+        nextSlide.scrollIntoView({ behavior: 'smooth', inline: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
