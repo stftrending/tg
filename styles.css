@@ -159,4 +159,14 @@ input {
     max-width: 280px;
     margin-top: 1rem;
   }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 0.1rem;
+        margin-top: auto;
+    }
+
+    p {
+        font-size: 18px;
+    }
 }
