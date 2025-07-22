@@ -69,6 +69,8 @@ small {
 .btn {
   padding: 0.75rem 5.5rem;
   margin-top: 1rem;
+  text-decoration: none;
+  white-space: nowrap;
   background-color: #07588a;
   border: none;
   color: white;
